@@ -1,0 +1,28 @@
+body {
+    background-color: #eeeeee;
+}
+
+.board {
+    width: 400px;
+    height: 150px;
+    border-radius: 20px;
+    display: flex;
+    margin: 15px;
+}
+
+.list {
+    width: 400px;
+    border-radius: 20px;
+    display: flex;
+    margin: 35px;
+    flex-direction: column;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+.link {
+    text-decoration: none;
+}

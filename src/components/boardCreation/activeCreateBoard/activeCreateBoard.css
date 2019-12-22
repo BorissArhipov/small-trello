@@ -1,0 +1,55 @@
+.active-create-board-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #82d353;
+    width: 400px;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+.active-create-board-con input {
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.active-create-board-con input::placeholder {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.active-create-board-con2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.active-create-board-cancel {
+    width: 100px;
+    height: 30px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 10px;
+    background: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.active-create-board-submit {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #eeeeee;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+

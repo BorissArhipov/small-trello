@@ -1,0 +1,81 @@
+.active-board-header-con {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6ee2dc;
+    margin: 35px;
+    width: 400px;
+    
+}
+
+.single-list {
+    background-color: #ffffff;
+    align-items: center;
+}
+
+.create-card-con {
+    margin-bottom: 15px;
+}
+
+.single-list input {
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
+    background-color: #eeeeee;
+}
+
+.single-card {
+    width: 330px;
+    min-height: 35px;
+    border: none;
+    background-color: #6aaa4d;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.single-card-done {
+    width: 330px;
+    min-height: 35px;
+    border: none;
+    background-color: #a1a1a1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #eeeeee;
+    margin-bottom: 15px;
+    text-decoration: line-through;
+}
+
+.create-card-submit {
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    background-color: #eeeeee;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.single-list h2 {
+    color: #000000;
+}
+
+.list-collection-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
