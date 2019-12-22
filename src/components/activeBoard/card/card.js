@@ -1,28 +1,6 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 import toggleDone from './../../../actions/toggleDone';
-
-// const Types = {
-//     CARD: 'card',
-// }
-
-
-// const cardSource = {
-//     beginDrag({ label, cardId, listId, done }) {
-//         return {
-//             label, cardId, listId, done
-//         }
-//     }
-// }
-
-// function collect(connect, monitor) {
-// 	return {
-// 		connectDragSource: connect.dragSource(),
-// 		connectDragPreview: connect.dragPreview(),
-// 		isDragging: monitor.isDragging(),
-// 	}
-// }
-
 
 class Card extends Component {
     cardToggleDone(cardId, listId) {

@@ -6,8 +6,6 @@ import Header from './../header/header';
 
 import './for-all.css';
 
-import HTML5Backend from 'react-dnd-html5-backend';
-import { DndProvider } from 'react-dnd';
 export default class App extends Component {
 	render() {
 		return (

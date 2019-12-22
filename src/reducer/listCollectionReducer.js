@@ -7,6 +7,7 @@ const initialState = {
 
 const listCollectionReducer = (state = initialState, action) => {
     console.log(action);
+    console.log(state);
     switch (action.type) {
         case 'NEW_LIST_TO_COLLECTION':
             return {
@@ -28,7 +29,6 @@ const listCollectionReducer = (state = initialState, action) => {
                 done: false,
                 listId: currentList.id  
             };
-            console.log(newCard);
             const newCardToList = {
                 ...currentList,
                 cards: [...currentList.cards, newCard]
@@ -37,16 +37,6 @@ const listCollectionReducer = (state = initialState, action) => {
                 lists: [...state.lists.slice(0, ind), newCardToList, ...state.lists.slice(ind + 1, state.lists.length)],
                 label: ''
             };
-        // case 'HANDLE_DROP': {
-        //     const { cardName, cardId, listId, done, newListId } = action.payload;
-        //     const currentDropList = state.lists.find(list => list.id === newListId); // list that's going to be taking the new card
-        //     console.log(action.payload);
-        //     currentDropList.cards.push({ label: cardName, id: cardId, done: done, listId: newListId }); // add the card to the list
-        //     const removeCard = state.lists.find(list => list.id === listId).cards.findIndex(card => card.id === cardId); // find the card to remove
-        //     const oldList = state.lists.find(list => list.id === listId).cards.splice(removeCard, 1); // remove the card from the list
-
-        //         return state;
-        // }
         case 'TOGGLE_DONE':
             const currentCardList = state.lists.find(list => list.id === action.listId);
             const indx = state.lists.indexOf(currentCardList);
@@ -66,6 +56,7 @@ const listCollectionReducer = (state = initialState, action) => {
         default: 
             return state;
     }
+    
 };
   
 export default listCollectionReducer;

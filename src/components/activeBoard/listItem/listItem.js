@@ -1,40 +1,7 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import CreateCardContainer from './../createCardContainer/createCardContainer';
-import handleDrop from './../../../actions/handleDrop';
 import Card from './../card/card';
 
-
-
-// const Types = {
-//     CARD: 'card',
-// }
-
-// const dropSource = {
-//     drop(props, monitor) {
-//         const card = monitor.getItem(); // this item is being dragged
-//         const target = monitor.getDropResult();
-//         console.log(props);
-//         console.log(target);
-//         props.handleDrop(card.label, card.cardId, card.listId, card.done, props.id);
-//         // const droppedItem = props.onDrop(monitor.getItem());
-
-//     },
- 
-// }
-
-// function collect(connect, monitor) {
-//     return {
-//         // Call this function inside render()
-//         // to let React DnD handle the drag events:
-//         connectDropTarget: connect.dropTarget(),
-//         // You can ask the monitor about the current drag state:
-//         isOver: monitor.isOver(),
-//         isOverCurrent: monitor.isOver({ shallow: true }),
-//         canDrop: monitor.canDrop(),
-//         itemType: monitor.getItemType()
-//     };
-// }
 
 class ListItem extends Component {
 
@@ -62,6 +29,4 @@ class ListItem extends Component {
     }
 }
 
-
-// ListItem = DropTarget(Types.CARD, dropSource, collect)(ListItem);
-export default connect(null, { handleDrop })(ListItem);
+export default ListItem;
