@@ -17,8 +17,6 @@ class ActiveBoard extends Component {
 
     renderAllLists = () => {
         const { listCollection, activeReducer} = this.props;
-        console.log(listCollection);
-        console.log(activeReducer);
         return listCollection.lists.filter(list => list.id.slice(0, list.id.indexOf('l')) === activeReducer.id).map(list => {
             return (
                 <div key={list.id}>

@@ -7,7 +7,6 @@ const initialState = {
 
 const listCollectionReducer = (state = initialState, action) => {
     console.log(action);
-    console.log(state);
     switch (action.type) {
         case 'NEW_LIST_TO_COLLECTION':
             return {
