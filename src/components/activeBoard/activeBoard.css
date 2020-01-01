@@ -1,12 +1,13 @@
 .active-board-header-con {
     border-radius: 10px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: #6ee2dc;
     margin: 35px;
-    width: 400px;
-    
+}
+
+.active-board-header-con h2 {
+    color: #5f5f5f;
+    margin: 0;
 }
 
 .single-list {
@@ -15,7 +16,7 @@
 }
 
 .create-card-con {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .single-list input {
@@ -41,6 +42,9 @@
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 15px;
+    text-shadow: 0px 0px 3px #000;
+    -webkit-animation: fadeIn 1s ease;
+	animation: fadeIn 1s ease;
 }
 
 .single-card-done {
@@ -58,6 +62,8 @@
     color: #eeeeee;
     margin-bottom: 15px;
     text-decoration: line-through;
+    -webkit-animation: fadeIn 1s ease;
+	animation: fadeIn 1s ease;
 }
 
 .create-card-submit {
@@ -78,4 +84,5 @@
 .list-collection-wrap {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 30px;
 }

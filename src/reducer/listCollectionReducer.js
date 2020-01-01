@@ -6,7 +6,6 @@ const initialState = {
 };
 
 const listCollectionReducer = (state = initialState, action) => {
-    console.log(action);
     switch (action.type) {
         case 'NEW_LIST_TO_COLLECTION':
             return {
@@ -36,6 +35,36 @@ const listCollectionReducer = (state = initialState, action) => {
                 lists: [...state.lists.slice(0, ind), newCardToList, ...state.lists.slice(ind + 1, state.lists.length)],
                 label: ''
             };
+        case 'HANDLE_DROP':
+            const newList = state.lists.find(list => list.id === action.payload.newListId);
+            const newListInd = state.lists.indexOf(newList);
+            const droppedCard = {
+                label: action.payload.cardName,
+                id: action.payload.cardId,
+                done: action.payload.done,
+                listId: action.payload.newListId  
+            };
+            const droppedCardToList = {
+                ...newList,
+                cards: [...newList.cards, droppedCard]
+            }
+            const newListToState = [...state.lists.slice(0, newListInd), droppedCardToList, ...state.lists.slice(newListInd + 1, state.lists.length)];
+            const oldList = newListToState.find(list => list.id === action.payload.listId);
+            const oldListInd = newListToState.indexOf(oldList);
+            const oldCardInd = oldList.cards.indexOf(oldList.cards.find(el => {
+                if(el.id === action.payload.cardId) {
+                    return el;
+                }
+            }));
+            const deleteCardFromOldList = {
+                ...oldList,
+                cards: [...oldList.cards.slice(0, oldCardInd), ...oldList.cards.slice(oldCardInd + 1, oldList.cards.length)]
+            }
+            return {
+                lists: [...newListToState.slice(0, oldListInd), deleteCardFromOldList, ...newListToState.slice(oldListInd + 1, newListToState.length)],
+                label: ''
+            };
+
         case 'TOGGLE_DONE':
             const currentCardList = state.lists.find(list => list.id === action.listId);
             const indx = state.lists.indexOf(currentCardList);

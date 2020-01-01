@@ -3,3 +3,7 @@
     align-items: center;
     background-color: #82d353;
 }
+
+.create-new-board h2 {
+    text-shadow: 0px 0px 3px #000;
+}
