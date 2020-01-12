@@ -1,4 +1,4 @@
-import uniqueId from 'lodash/uniqueId';
+import uniqueId from 'uuid/v4';
 
 const initialState = {
     isBoardOpen: false,
@@ -13,7 +13,7 @@ const createBoardReducer = (state = initialState, action) => {
                 ...state,
                 isBoardOpen: true,
                 label: '',
-                id: ''
+                id: null
             };
         case 'CANCEL_NEW_BOARD':
             return {

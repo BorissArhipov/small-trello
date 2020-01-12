@@ -7,17 +7,24 @@ body {
     height: 150px;
     border-radius: 20px;
     display: flex;
-    margin: 5px;
+    margin: 10px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     -webkit-animation: fadeIn 1s ease;
-	animation: fadeIn 1s ease;
+    animation: fadeIn 1s ease;
+    transition: 0.2s;
+}
+
+.board:hover {
+    width: 410px;
+    height: 160px;
+    margin: 5px;
 }
 
 .list {
     width: 400px;
     border-radius: 20px;
     display: flex;
-    margin: 5px;
+    margin: 10px;
     flex-direction: column;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     -webkit-animation: fadeIn 1s ease;

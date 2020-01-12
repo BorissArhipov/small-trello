@@ -1,11 +1,9 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = (env = {}) => {
-    const { mode = 'development' } = env;
-    const isProd = env.mode === 'production';
-    const isDev = env.mode === 'development';
+
     return {
-        mode: isProd ? 'production' : isDev && 'development',
+        mode: 'development',
         module: {
             rules: [
                 {

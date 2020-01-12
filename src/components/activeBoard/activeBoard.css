@@ -44,7 +44,8 @@
     margin-bottom: 15px;
     text-shadow: 0px 0px 3px #000;
     -webkit-animation: fadeIn 1s ease;
-	animation: fadeIn 1s ease;
+    animation: fadeIn 1s ease;
+    transition: 0.2s;
 }
 
 .single-card-done {
@@ -63,7 +64,8 @@
     margin-bottom: 15px;
     text-decoration: line-through;
     -webkit-animation: fadeIn 1s ease;
-	animation: fadeIn 1s ease;
+    animation: fadeIn 1s ease;
+    transition: 0.2s;
 }
 
 .create-card-submit {
