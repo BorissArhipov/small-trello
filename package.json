@@ -19,8 +19,9 @@
     "uuid": "^3.3.3"
   },
   "scripts": {
-    "start": "webpack-dev-server",
+    "dev": "webpack-dev-server",
     "build": "webpack --env.mode=production",
+    "start": "node server.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
