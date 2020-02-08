@@ -12,3 +12,4 @@ Board is synchronized with local storage.
 * React DnD
 * Babel + Webpack
 
+Demo - https://small-trello.herokuapp.com/
