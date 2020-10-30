@@ -1,15 +1,23 @@
-### Simple trello
+# Trello clone
+Simple clone of a trello app from trello.com. Clone uses the LocalStorage to save boards and list you made.
 
-A simple clone of a trello.
+## Responsibilities:
 
-Via this app users can make they boards of ToDo lists. Every item in the list is draggable.
+* Building up a React project
+* Implementing the OOP
+* Implementing the component approach
+* Using the Redux store
+* Implementing the React DnD and the React Router
 
-Board is synchronized with local storage.
+## Technologies:
 
-## Technologies
-
-* React + Redux
+* HTML
+* CSS
+* React
+* Redux
 * React DnD
-* Babel + Webpack
+* React Router
+* Git
+* Webpack
 
-Demo - https://small-trello.herokuapp.com/
+## Demo - https://trello.borissarhipov.me/
