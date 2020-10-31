@@ -2,7 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     margin: 30px;
-    align-items: center;
 }
 
 .single-board {
